@@ -3,7 +3,8 @@
 const { cleandir } = require("rollup-plugin-cleandir");
 import typescript from "rollup-plugin-typescript2";
 import babel from "@rollup/plugin-babel";
-import markdown from "@jackfranklin/rollup-plugin-markdown";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 
 module.exports = {
   input: ["./src/index.ts"],
@@ -14,7 +15,8 @@ module.exports = {
   plugins: [
     cleandir("./lib"),
     typescript(),
-    markdown(),
     babel({ babelHelpers: "bundled" }),
+    nodeResolve(),
+    commonjs(),
   ],
 };
