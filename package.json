@@ -1,12 +1,15 @@
 {
   "name": "hook",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Collection of React Hooks",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "test": "jest --coverage",
     "dev": "rollup -w -c",
     "build": "rollup -c",
+    "lint:types": "tsc --noEmit",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
