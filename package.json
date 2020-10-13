@@ -9,7 +9,7 @@
     "build": "rollup -c"
   },
   "keywords": [],
-  "author": "",
+  "author": "liangdong",
   "license": "ISC",
   "dependencies": {
     "react": "^16.13.1"
