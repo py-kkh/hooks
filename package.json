@@ -9,8 +9,10 @@
     "test": "jest --coverage",
     "dev": "rollup -w -c",
     "build": "rollup -c",
-    "fix": "eslint --fix",
+    "lint": "eslint ./src/**/*.ts",
+    "lint:fix": "yarn lint --fix",
     "lint:types": "tsc --noEmit",
+    "lint:prettier": "prettier --write ./src/**/*.ts",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -42,6 +44,7 @@
     "jest": "^26.5.3",
     "lint-staged": "^10.4.0",
     "markdown-loader": "^6.0.0",
+    "prettier": "^2.1.2",
     "react-is": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "rollup": "^2.29.0",
@@ -57,13 +60,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "yarn lint:types && lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
     "*src/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
+      "prettier --write",
       "git add"
     ]
   }

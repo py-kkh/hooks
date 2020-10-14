@@ -2,7 +2,7 @@
 module.exports = {
   parser: "@typescript-eslint/parser", // 使用 ts 解析器
   extends: [
-    "eslint:recommended", // eslint 推荐规则
+    // "eslint:recommended", // eslint 推荐规则
     "plugin:@typescript-eslint/recommended", // ts 推荐规则
   ],
   plugins: ["@typescript-eslint"],
@@ -19,5 +19,8 @@ module.exports = {
       experimentalObjectRestSpread: true,
     },
   },
-  rules: {}, // 自定义
+  rules: {
+    "@typescript-eslint/explicit-module-boundary-types": [0],
+    "@typescript-eslint/no-explicit-any": [0],
+  },
 };
