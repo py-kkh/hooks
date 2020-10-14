@@ -2,10 +2,13 @@
 
 # dependencies
 /node_modules
-/lib
+
+# build
+lib/
 
 # testing
 /coverage
+
 # misc
 .DS_Store
 .env*

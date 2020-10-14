@@ -12,6 +12,7 @@ module.exports = {
     dir: "./lib",
     format: "cjs",
   },
+  external: ["react"],
   plugins: [
     cleandir("./lib"),
     typescript(),
