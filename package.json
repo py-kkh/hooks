@@ -1,6 +1,6 @@
 {
-  "name": "hook",
-  "version": "1.0.0",
+  "name": "react-hook-lib",
+  "version": "0.0.1",
   "description": "Collection of React Hooks",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
