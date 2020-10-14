@@ -11,13 +11,15 @@ module.exports = {
   output: {
     dir: "./lib",
     format: "cjs",
+    preserveModules: true,
+    exports: "named",
   },
   external: ["react"],
   plugins: [
     cleandir("./lib"),
-    typescript(),
-    babel({ babelHelpers: "bundled" }),
     nodeResolve(),
     commonjs(),
+    typescript(),
+    babel({ babelHelpers: "bundled" }),
   ],
 };
