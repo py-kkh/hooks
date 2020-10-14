@@ -13,7 +13,7 @@ module.exports = {
     preserveModules: true,
     exports: "named",
   },
-  external: ["react"],
+  external: ["react", "react-dom"],
   plugins: [
     cleandir("./lib"),
     nodeResolve(),

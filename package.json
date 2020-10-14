@@ -1,5 +1,5 @@
 {
-  "name": "react-hook-lib",
+  "name": "react-hook-collection",
   "version": "0.0.1",
   "description": "Collection of React Hooks",
   "main": "lib/index.js",
@@ -41,7 +41,6 @@
     "lint-staged": "^10.4.0",
     "markdown-loader": "^6.0.0",
     "prettier": "^2.1.2",
-    "react": "^16.13.1",
     "react-is": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "rollup": "^2.29.0",
@@ -50,6 +49,10 @@
     "rollup-plugin-typescript2": "^0.27.3",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   },
   "husky": {
     "hooks": {
