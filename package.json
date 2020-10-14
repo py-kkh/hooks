@@ -9,6 +9,7 @@
     "test": "jest --coverage",
     "dev": "rollup -w -c",
     "build": "rollup -c",
+    "fix": "eslint --fix",
     "lint:types": "tsc --noEmit",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -32,6 +33,7 @@
     "@storybook/react": "^6.0.26",
     "@testing-library/react-hooks": "^3.4.2",
     "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
     "ahooks": "^2.6.1",
     "babel-loader": "^8.1.0",
@@ -40,7 +42,6 @@
     "jest": "^26.5.3",
     "lint-staged": "^10.4.0",
     "markdown-loader": "^6.0.0",
-    "prettier": "^2.1.2",
     "react-is": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "rollup": "^2.29.0",

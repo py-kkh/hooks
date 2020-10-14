@@ -5,6 +5,8 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 const analyze = require("rollup-plugin-analyzer");
 
+const extensions = [".js", ".ts"];
+
 module.exports = {
   input: ["./src/index.ts"],
   output: {
@@ -19,7 +21,11 @@ module.exports = {
     nodeResolve(),
     commonjs(),
     typescript(),
-    babel({ babelHelpers: "bundled" }),
+    babel({
+      exclude: "node_modules/**",
+      babelHelpers: "bundled",
+      extensions,
+    }),
     analyze(),
   ],
 };
