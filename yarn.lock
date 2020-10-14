@@ -10420,6 +10420,11 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rollup-plugin-analyzer@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.npm.taobao.org/rollup-plugin-analyzer/download/rollup-plugin-analyzer-3.3.0.tgz#52fb30465ae927d9c078b6ec90c578cfb9164fc2"
+  integrity sha1-UvswRlrpJ9nAeLbskMV4z7kWT8I=
+
 rollup-plugin-cleandir@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/rollup-plugin-cleandir/download/rollup-plugin-cleandir-1.0.0.tgz#1d86e67a82039e416e1e2ca76d3f3edf1d2e6ce3"
