@@ -9,6 +9,8 @@
     "strict": true,
     "esModuleInterop": true,
     "pretty": true,
+    // Ensure that Babel can safely transpile files in the TypeScript project
+    "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]

@@ -24,8 +24,8 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.11.6",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.12.1",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@rollup/plugin-babel": "^5.2.1",
@@ -39,7 +39,6 @@
     "@types/jest": "^26.0.14",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
-    "ahooks": "^2.6.1",
     "babel-loader": "^8.1.0",
     "eslint": "^7.11.0",
     "husky": "^4.3.0",
@@ -51,7 +50,6 @@
     "react-test-renderer": "^16.13.1",
     "rollup": "^2.29.0",
     "rollup-plugin-analyzer": "^3.3.0",
-    "rollup-plugin-cleandir": "^1.0.0",
     "rollup-plugin-typescript2": "^0.27.3",
     "standard-version": "^9.0.0",
     "ts-jest": "^26.4.1",
@@ -70,8 +68,7 @@
   "lint-staged": {
     "*src/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
