@@ -5,6 +5,7 @@
 
 # build
 lib/
+esm/
 
 # testing
 /coverage

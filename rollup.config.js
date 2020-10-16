@@ -9,12 +9,20 @@ const extensions = [".js", ".ts"];
 
 module.exports = {
   input: ["./src/index.ts"],
-  output: {
-    dir: "./lib",
-    format: "cjs",
-    preserveModules: true,
-    exports: "named",
-  },
+  output: [
+    {
+      dir: "./lib",
+      format: "cjs",
+      preserveModules: true,
+      exports: "named",
+    },
+    {
+      dir: "./esm",
+      format: "es",
+      preserveModules: true,
+      exports: "named",
+    },
+  ],
   external: ["react", "react-dom"],
   plugins: [
     cleandir("./lib"),
