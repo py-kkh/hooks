@@ -1,4 +1,4 @@
-// const { cleandir } = require("rollup-plugin-cleandir");
+import clear from "rollup-plugin-clear";
 import typescript from "rollup-plugin-typescript2";
 import babel from "@rollup/plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
@@ -14,15 +14,20 @@ module.exports = {
       dir: "./lib",
       format: "cjs",
       preserveModules: true,
+      exports: "named",
     },
     {
       dir: "./esm",
       format: "es",
       preserveModules: true,
+      exports: "named",
     },
   ],
   external: ["react"],
   plugins: [
+    clear({
+      targets: ["lib", "esm"],
+    }),
     resolve({ extensions }),
     commonjs(),
     typescript(),

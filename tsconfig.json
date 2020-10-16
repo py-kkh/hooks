@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNext",
     "moduleResolution": "node",
     "jsx": "react",
     "declaration": true,
@@ -9,8 +9,6 @@
     "strict": true,
     "esModuleInterop": true,
     "pretty": true,
-    // Ensure that Babel can safely transpile files in the TypeScript project
-    "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
@@ -18,5 +16,5 @@
     "skipLibCheck": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "lib", "stories"]
+  "exclude": ["node_modules", "lib", "stories", "./src/**/*.test.ts"]
 }
