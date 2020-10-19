@@ -16,5 +16,5 @@
     "skipLibCheck": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "lib", "stories", "./src/**/*.test.ts"]
+  "exclude": ["node_modules", "lib", "esm", "stories", "./src/**/*.test.ts"]
 }
